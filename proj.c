@@ -33,7 +33,11 @@ int main(void)
 	return 0;
 }
 
-/* Note:  This function may cause overflow the memory of computer */
++<<<<<<< .mine
++/* Note: This function may cause overflow the memory of computer */
++=======
++/* This function uses recursive call to solve the problem of Hanoi tower */
++>>>>>>> .r7
 void towers(int n, char fromrod, char torod, char auxrod)
 { 
 	/* If only 1 disk, make the move and return */
