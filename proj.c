@@ -1,6 +1,3 @@
-
-// Comment in working copy 2
-
 /*
 ||========================================================
 || CS460: Algorithm Design Methodologies
@@ -35,7 +32,8 @@ int main(void)
 	printf("\n");
 	return 0;
 }
-	
+
+/* This function execute the hanoi tower algorithm */	
 void towers(int n, char fromrod, char torod, char auxrod)
 { 
 	/* If only 1 disk, make the move and return */
