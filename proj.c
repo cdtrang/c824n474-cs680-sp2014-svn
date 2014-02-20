@@ -33,7 +33,6 @@ int main(void)
 	return 0;
 }
 
-/* This function execute the hanoi tower algorithm */	
 void towers(int n, char fromrod, char torod, char auxrod)
 { 
 	/* If only 1 disk, make the move and return */
@@ -43,9 +42,9 @@ void towers(int n, char fromrod, char torod, char auxrod)
 	}
 	
 	/* Move top n-1 disks from A to C, using B as auxiliary */
-	towers(n-1, fromrod, auxrod, torod);
+	towers(n-1, fromrod, auxrod, torod); // Using recursive call
 	/* Move remaining disks from A to B */
 	printf("\nMove disk %d from Tower %c ---> Tower %c", n, fromrod, torod);
 	/* Move n-1 disks from C to B using A as auxiliary */
-	towers(n-1,auxrod,torod,fromrod);
+	towers(n-1,auxrod,torod,fromrod); // Using recursive call
 }
